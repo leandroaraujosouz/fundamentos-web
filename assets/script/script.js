@@ -87,3 +87,8 @@ function imagemNormal(imagem)
     imagem.style.height ="200px";
     document.body.style.backgroundImage = "none";
 }
+
+function tocar()
+{
+    document.querySelector("#musica").play();
+}
