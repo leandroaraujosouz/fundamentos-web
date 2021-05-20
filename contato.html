@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="./assets/style/style.css">
+    
 </head>
 <body>
     <div id="menu">
@@ -23,14 +24,18 @@
     <div class="container">
         <form>
             <label for="nome">Nome:</label><br>
-            <input type="text" id="nome"><br><br>
+            <input type="text" id="nome" onkeyup="validaNome()"><br>
+            <div id="txtNome"></div><br>
             <label for="email">Email:</label><br>
-            <input type="email" id="email"><br><br>
+            <input type="email" id="email" onkeyup="validaEmail()"><br>
+            <div id="txtEmail"></div><br>
             <label for="assunto">Assunto:</label><br>
-            <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea><br>
-
-            <input id="enviar" type="submit" value="Enviar">
+            <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea><br>
+            <div id="txtAssunto"></div><br>
+            <input id="enviar" type="submit" value="Enviar" onclick="envio()">
         </form>
     </div>
+    
+    <script src="./assets/script/script.js"></script>
 </body>
 </html>
