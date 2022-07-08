@@ -4,6 +4,7 @@ jobs:
   slackNotification:
     name: Slack Notification
     runs-on: ubuntu-latest
+    environment: env
     steps:
     - uses: actions/checkout@v2
     - name: Slack Notification
